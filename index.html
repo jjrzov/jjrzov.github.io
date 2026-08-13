@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jorge Ramirez — Engineering Portfolio</title>
+<meta name="description" content="Engineering portfolio — robotics, autonomous systems, controls, and machine learning projects." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<nav class="signal-rail" aria-hidden="true">
+  <svg viewBox="0 0 64 1400" preserveAspectRatio="none">
+    <line class="rail-line" x1="32" y1="0" x2="32" y2="1400" />
+    <circle class="rail-node" data-node="hero" cx="32" cy="90" r="5" />
+    <circle class="rail-node" data-node="work" cx="32" cy="420" r="5" />
+    <circle class="rail-node" data-node="about" cx="32" cy="1050" r="5" />
+    <circle class="rail-node" data-node="contact" cx="32" cy="1250" r="5" />
+  </svg>
+</nav>
+
+<div class="shell">
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="#top" class="brand"><span class="brand-tick">&#9670;</span> J. RAMIREZ</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#work" data-nav="work">Projects</a>
+        <a href="#about" data-nav="about">About</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+        <a href="#" class="btn" style="padding:7px 14px;">Resume</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav">MENU</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#work">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Resume</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="wrap" style="position:relative;">
+        <span class="reticle reticle-tl"><svg viewBox="0 0 22 22"><path d="M0 8 L0 0 L8 0" stroke="var(--ink-faint)" stroke-width="1.5" fill="none"/></svg></span>
+        <span class="reticle reticle-tr"><svg viewBox="0 0 22 22"><path d="M0 8 L0 0 L8 0" stroke="var(--ink-faint)" stroke-width="1.5" fill="none"/></svg></span>
+
+        <p class="eyebrow">Robotics &amp; Autonomous Systems</p>
+        <h1>Jorge Ramirez</h1>
+        <p class="pitch">
+          Engineering student building autonomous vehicle stacks, robotic manipulation
+          systems, and the controls, perception, and planning that hold them together.
+          This is a working log of that build &mdash; approach, tradeoffs, and results,
+          not just finished demos.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn primary">View Projects &#8594;</a>
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+
+        <div class="title-block">
+          <div class="title-block-grid">
+            <div class="title-block-cell">
+              <div class="title-block-label">Focus</div>
+              <div class="title-block-value">Controls &middot; Planning &middot; CV</div>
+            </div>
+            <div class="title-block-cell">
+              <div class="title-block-label">Platforms</div>
+              <div class="title-block-value">QCar &middot; CARLA &middot; OM-X Arm</div>
+            </div>
+            <div class="title-block-cell">
+              <div class="title-block-label">Status</div>
+              <div class="title-block-value">Open to opportunities</div>
+            </div>
+            <div class="title-block-cell">
+              <div class="title-block-label">Contact</div>
+              <div class="title-block-value"><a href="#contact">See below &#8594;</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-id">01</span>
+          <h2>Projects</h2>
+          <span class="section-rule"></span>
+        </div>
+
+        <!-- PROJECT 1: Planning & Control for AVs (Quanser QCar) -->
+        <article class="project" id="project-qcar">
+          <div class="project-plate">
+            <div>
+              <div class="project-plate-id">SYS&#8209;01 &middot; AUTONOMOUS GROUND VEHICLE</div>
+              <h3>Planning &amp; Control for Autonomous Vehicles</h3>
+              <p class="project-blurb">A complete autonomous ground vehicle software/hardware stack covering controls, planning, and perception.</p>
+            </div>
+            <div class="project-links">
+              <a href="#" class="disabled">&#9654; Final Video</a>
+              <a href="#" class="disabled">&#8599; Final Report</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="tag-row">
+              <span class="tag-pin">Controls</span>
+              <span class="tag-pin">EKFs</span>
+              <span class="tag-pin">CV</span>
+              <span class="tag-pin">Planning</span>
+              <span class="tag-pin">Occupancy Grid Mapping</span>
+              <span class="tag-pin">Jetson Orin Nano</span>
+              <span class="tag-pin">Quanser QCar</span>
+              <span class="tag-pin">Quanser Sim</span>
+              <span class="tag-pin">Intel RealSense</span>
+              <span class="tag-pin">LiDAR</span>
+              <span class="tag-pin">IMU</span>
+              <span class="tag-pin">AVs</span>
+              <span class="tag-pin">OpenCV</span>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Approach</div>
+              <ul>
+                <li><strong>State estimation &amp; modeling</strong> &mdash; modeled vehicle kinematics with a bicycle model and fused GPS/IMU data through a dead-reckoning and heading-corrected EKF for robust pose estimates.</li>
+                <li><strong>Control</strong> &mdash; closed the loop with longitudinal speed control and Stanley-based geometric steering for trajectory tracking.</li>
+                <li><strong>Perception (vision)</strong> &mdash; calibrated cameras for undistorted imagery, then layered lane detection, object detection (YOLOv8), and bird's-eye-view lane-keeping with pure-pursuit control.</li>
+                <li><strong>Perception (LiDAR) &amp; planning</strong> &mdash; built occupancy grid maps from LiDAR for environment interpretation, and planned global paths with A*.</li>
+              </ul>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Results</div>
+              <p class="placeholder-text">[Add results summary here &mdash; e.g. tracking accuracy, detection performance, or a link to the demo run.]</p>
+            </div>
+
+            <details class="labs">
+              <summary>Labs completed (9)</summary>
+              <div class="labs-grid">
+                <span>Vehicle architecture &amp; safety procedures</span>
+                <span>Sensor interfacing &amp; noise characterization</span>
+                <span>Bicycle model verification</span>
+                <span>Dead-reckoning &amp; EKF state estimation</span>
+                <span>Longitudinal &amp; steering control</span>
+                <span>Camera calibration &amp; undistortion</span>
+                <span>LiDAR occupancy mapping</span>
+                <span>Object detection &amp; YOLOv8 segmentation</span>
+                <span>Vision-based lane keeping</span>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: A* vs Hybrid A* CARLA Demo -->
+        <article class="project" id="project-astar">
+          <div class="project-plate">
+            <div>
+              <div class="project-plate-id">SYS&#8209;02 &middot; PLANNING &amp; CONTROL STUDY</div>
+              <h3>A* vs. Hybrid A* &mdash; CARLA Demo</h3>
+              <p class="project-blurb">Simulator demo comparing Hybrid A* and A* for autonomous vehicle applications.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://youtu.be/nBQTj5k9iuQ" target="_blank" rel="noopener">&#9654; Demo Video</a>
+              <a href="https://github.com/jjrzov/AstarVSHybridAstar" target="_blank" rel="noopener">&#8599; GitHub</a>
+              <a href="#" class="disabled">&#8599; Final Report</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="tag-row">
+              <span class="tag-pin">CARLA Simulator</span>
+              <span class="tag-pin">Python</span>
+              <span class="tag-pin">AVs</span>
+              <span class="tag-pin">Path Planning</span>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Approach</div>
+              <p>Compared A* and Hybrid A* path planning for autonomous parking in CARLA (Town05). Both planners were sourced from an open-source motion planning library (zhm&#8209;real) &mdash; my contribution was the system integration: building the CARLA obstacle pipeline from vehicle bounding boxes, a custom path follower with crash detection (CARLA's built-in manager doesn't support custom path tracking), Stanley controller tuning to match the Audi e-tron model, and the trial evaluation framework. This closed-loop setup &mdash; planning &#8594; tracking &#8594; crash detection &mdash; is what caught A*'s Trial 1 collision, directly demonstrating the kinematic-feasibility gap the project set out to test.</p>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Code Summary</div>
+              <p>Hybrid A* discretizes heading into 15&deg; bins and samples 39 steering angles per expansion, propagating a bicycle kinematic model and using Reeds&#8209;Shepp shortcuts to terminate search early once a direct connection to the goal is feasible.</p>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Sim Experience</div>
+              <p>Five trials with varying obstacle layouts in a 57&times;34m parking lot, isolating the planner as the only variable between runs to attribute outcome differences directly to the algorithm.</p>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Results</div>
+              <div class="results-line">
+                Hybrid A* produced smoother, collision-free paths across all five trials (max turning angle &le;0.09 rad in 4/5 trials vs. A*'s consistent 1.571 rad), at the cost of longer planning time on complex routes (0.61s vs 0.16s in Trial 4) &mdash; while A* caused one collision from its sharp, kinematically-infeasible turns. Five trials in a single layout demonstrate the failure mode clearly, but aren't a statistically powered comparison.
+              </div>
+            </div>
+
+            <div class="project-block">
+              <p class="contribution-line">Co-developed with Vanessa Guzman &mdash; my contributions: simulation setup, obstacle pipeline, CARLA integration, path follower, controller tuning.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Vision Based Robotic Manipulation -->
+        <article class="project" id="project-manipulation">
+          <div class="project-plate">
+            <div>
+              <div class="project-plate-id">SYS&#8209;03 &middot; ROBOTIC MANIPULATION</div>
+              <h3>Vision-Based Robotic Manipulation</h3>
+              <p class="project-blurb">Implemented a vision-guided robotic manipulator pick-and-place sorting system.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://youtu.be/zEReax7Bfgg" target="_blank" rel="noopener">&#9654; Demo Video</a>
+              <a href="#" class="disabled">&#8599; Final Report</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="tag-row">
+              <span class="tag-pin">CV</span>
+              <span class="tag-pin">Planning</span>
+              <span class="tag-pin">Controls</span>
+              <span class="tag-pin">Manipulators</span>
+              <span class="tag-pin">Intel RealSense</span>
+              <span class="tag-pin">OOP</span>
+              <span class="tag-pin">OpenCV</span>
+              <span class="tag-pin">Open Manipulator-X</span>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Approach</div>
+              <p>Built a vision-guided pick-and-place system on an Open Manipulator&#8209;X arm, using an Intel RealSense camera to detect colored spheres via Hough Transform circle detection and HSV-based color classification. Ball positions were localized by repurposing an AprilTag PnP pipeline to get camera-frame coordinates, then transformed to robot frame using a calibration matrix from an earlier lab. Each pick used four chained cubic trajectories (approach &#8594; descend &#8594; retract &#8594; deliver to bin), with the gripper timed to close and open at the grasp and drop points.</p>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Design Decisions</div>
+              <ul>
+                <li><strong>Hough Transform over contour analysis</strong> &mdash; justified by known, well-defined circle geometry, despite the higher memory cost.</li>
+                <li><strong>Cubic trajectories over PID control</strong> &mdash; ball positions were static, so smooth open-loop trajectories were sufficient; PID would only have been necessary for a dynamic environment.</li>
+              </ul>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Code Summary</div>
+              <p>Image pipeline: HSV conversion &#8594; grayscale + CLAHE contrast enhancement &#8594; Gaussian blur &#8594; Hough circle detection &#8594; HSV-hue color classification, with workspace-bounds filtering to reject false-positive detections outside the robot's reachable area.</p>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Results</div>
+              <div class="results-line">
+                Reliably detected and sorted red, blue, orange, and yellow balls into correct bins, with measured vs. detected ball coordinates typically agreeing within a few millimeters &mdash; well inside the 15mm gripper tolerance &mdash; though lighting inconsistency occasionally caused orange/red misclassification.
+              </div>
+            </div>
+
+            <div class="project-block">
+              <p class="contribution-line">Collaborative lab with Anthony Man &mdash; shared design and implementation across CV, kinematics, and control.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-id">02</span>
+          <h2>About</h2>
+          <span class="section-rule"></span>
+        </div>
+        <p class="about-text placeholder-text">
+          [Short bio placeholder &mdash; a few sentences on your background, what you're
+          studying, and what kind of engineering roles or problems you're looking for.
+          Mention the platforms and tools you work in most: ROS2, Python, OpenCV,
+          PyTorch, embedded/RTOS work, etc.]
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-id">03</span>
+          <h2>Contact</h2>
+          <span class="section-rule"></span>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:your.email@example.com" class="contact-card">
+            <div class="label">Email</div>
+            <div class="value">your.email@example.com</div>
+          </a>
+          <a href="#" class="contact-card">
+            <div class="label">LinkedIn</div>
+            <div class="value">linkedin.com/in/&hellip;</div>
+          </a>
+          <a href="https://github.com/jjrzov" target="_blank" rel="noopener" class="contact-card">
+            <div class="label">GitHub</div>
+            <div class="value">github.com/jjrzov</div>
+          </a>
+          <a href="#" class="contact-card">
+            <div class="label">Resume</div>
+            <div class="value">Download PDF</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Jorge Ramirez</span>
+      <span>Built with HTML, CSS &amp; JS &middot; Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
