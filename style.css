@@ -618,6 +618,7 @@ a { color: inherit; }
 .contact-card .value {
   font-family: var(--font-mono);
   font-size: 13.5px;
+  overflow-wrap: anywhere;
 }
 
 /* ============================================
