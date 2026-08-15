@@ -109,11 +109,13 @@
               <p class="project-blurb">A complete autonomous ground vehicle software/hardware stack covering controls, planning, and perception.</p>
             </div>
             <div class="project-links">
-              <a href="#" class="disabled">&#9654; Final Video</a>
               <a href="#" class="disabled">&#8599; Final Report</a>
             </div>
           </div>
           <div class="project-body">
+            <div class="project-video">
+              <iframe src="https://www.youtube.com/embed/Jgsbadeq-jM" title="Planning &amp; Control for Autonomous Vehicles &mdash; Demo Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <div class="tag-row">
               <span class="tag-pin">Controls</span>
               <span class="tag-pin">EKFs</span>
@@ -138,11 +140,6 @@
                 <li><strong>Perception (vision)</strong> &mdash; calibrated cameras for undistorted imagery, then layered lane detection, object detection (YOLOv8), and bird's-eye-view lane-keeping with pure-pursuit control.</li>
                 <li><strong>Perception (LiDAR) &amp; planning</strong> &mdash; built occupancy grid maps from LiDAR for environment interpretation, and planned global paths with A*.</li>
               </ul>
-            </div>
-
-            <div class="project-block">
-              <div class="project-block-label">Results</div>
-              <p class="placeholder-text">[Add results summary here &mdash; e.g. tracking accuracy, detection performance, or a link to the demo run.]</p>
             </div>
 
             <details class="labs">
@@ -171,12 +168,14 @@
               <p class="project-blurb">Simulator demo comparing Hybrid A* and A* for autonomous vehicle applications.</p>
             </div>
             <div class="project-links">
-              <a href="https://youtu.be/nBQTj5k9iuQ" target="_blank" rel="noopener">&#9654; Demo Video</a>
               <a href="https://github.com/jjrzov/AstarVSHybridAstar" target="_blank" rel="noopener">&#8599; GitHub</a>
               <a href="#" class="disabled">&#8599; Final Report</a>
             </div>
           </div>
           <div class="project-body">
+            <div class="project-video">
+              <iframe src="https://www.youtube.com/embed/nBQTj5k9iuQ" title="A* vs. Hybrid A* &mdash; CARLA Demo Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <div class="tag-row">
               <span class="tag-pin">CARLA Simulator</span>
               <span class="tag-pin">Python</span>
@@ -200,13 +199,6 @@
             </div>
 
             <div class="project-block">
-              <div class="project-block-label">Results</div>
-              <div class="results-line">
-                Hybrid A* produced smoother, collision-free paths across all five trials (max turning angle &le;0.09 rad in 4/5 trials vs. A*'s consistent 1.571 rad), at the cost of longer planning time on complex routes (0.61s vs 0.16s in Trial 4) &mdash; while A* caused one collision from its sharp, kinematically-infeasible turns. Five trials in a single layout demonstrate the failure mode clearly, but aren't a statistically powered comparison.
-              </div>
-            </div>
-
-            <div class="project-block">
               <p class="contribution-line">Co-developed with Vanessa Guzman &mdash; my contributions: simulation setup, obstacle pipeline, CARLA integration, path follower, controller tuning.</p>
             </div>
           </div>
@@ -221,11 +213,13 @@
               <p class="project-blurb">Implemented a vision-guided robotic manipulator pick-and-place sorting system.</p>
             </div>
             <div class="project-links">
-              <a href="https://youtu.be/zEReax7Bfgg" target="_blank" rel="noopener">&#9654; Demo Video</a>
               <a href="#" class="disabled">&#8599; Final Report</a>
             </div>
           </div>
           <div class="project-body">
+            <div class="project-video">
+              <iframe src="https://www.youtube.com/embed/zEReax7Bfgg" title="Vision-Based Robotic Manipulation &mdash; Demo Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <div class="tag-row">
               <span class="tag-pin">CV</span>
               <span class="tag-pin">Planning</span>
@@ -253,13 +247,6 @@
             <div class="project-block">
               <div class="project-block-label">Code Summary</div>
               <p>Image pipeline: HSV conversion &#8594; grayscale + CLAHE contrast enhancement &#8594; Gaussian blur &#8594; Hough circle detection &#8594; HSV-hue color classification, with workspace-bounds filtering to reject false-positive detections outside the robot's reachable area.</p>
-            </div>
-
-            <div class="project-block">
-              <div class="project-block-label">Results</div>
-              <div class="results-line">
-                Reliably detected and sorted red, blue, orange, and yellow balls into correct bins, with measured vs. detected ball coordinates typically agreeing within a few millimeters &mdash; well inside the 15mm gripper tolerance &mdash; though lighting inconsistency occasionally caused orange/red misclassification.
-              </div>
             </div>
 
             <div class="project-block">
