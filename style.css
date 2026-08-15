@@ -2,18 +2,18 @@
    DESIGN TOKENS
    ============================================ */
 :root {
-  --bg: #EDEEF0;
-  --bg-panel: #FFFFFF;
-  --bg-panel-alt: #F5F6F7;
+  --bg: #FCF9EF;
+  --bg-panel: #FFFDF6;
+  --bg-panel-alt: #FEFBF2;
   --ink: #15181C;
   --ink-soft: #545B64;
   --ink-faint: #8A9098;
-  --line: #CBD2D9;
-  --line-soft: #DCE1E6;
-  --accent: #E8571B;
-  --accent-soft: #FBE4D9;
-  --signal: #1F4E8C;
-  --signal-soft: #DCE6F2;
+  --line: #E8EFB9;
+  --line-soft: #EFF2CD;
+  --accent: #7E9B27;
+  --accent-soft: #FBF7EB;
+  --signal: #5F8627;
+  --signal-soft: #F7F5E2;
 
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "IBM Plex Sans", sans-serif;
@@ -280,6 +280,7 @@ a { color: inherit; }
   line-height: 1.02;
   margin: 0 0 20px;
   letter-spacing: -0.01em;
+  color: #4A5D23;
 }
 
 .hero .pitch {
@@ -315,9 +316,9 @@ a { color: inherit; }
 }
 
 .btn.primary {
-  background: var(--ink);
+  background: #4A5D23;
   color: var(--bg-panel);
-  border-color: var(--ink);
+  border-color: #4A5D23;
 }
 
 .btn.primary:hover {
@@ -397,6 +398,7 @@ a { color: inherit; }
   font-family: var(--font-display);
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin: 0;
+  color: #4A5D23;
 }
 
 .section-rule {
@@ -439,6 +441,7 @@ a { color: inherit; }
   font-family: var(--font-display);
   font-size: 1.4rem;
   margin: 0 0 8px;
+  color: #4A5D23;
 }
 
 .project-blurb {
