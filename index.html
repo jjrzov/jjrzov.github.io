@@ -104,7 +104,7 @@
         <article class="project" id="project-qcar">
           <div class="project-plate">
             <div>
-              <div class="project-plate-id">SYS&#8209;01 &middot; AUTONOMOUS GROUND VEHICLE</div>
+              <div class="project-plate-id">AUTONOMOUS GROUND VEHICLE</div>
               <h3>Planning &amp; Control for Autonomous Vehicles</h3>
               <p class="project-blurb">A complete autonomous ground vehicle software/hardware stack covering controls, planning, and perception.</p>
             </div>
@@ -113,9 +113,6 @@
             </div>
           </div>
           <div class="project-body">
-            <div class="project-video">
-              <iframe src="https://www.youtube.com/embed/Jgsbadeq-jM" title="Planning &amp; Control for Autonomous Vehicles &mdash; Demo Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
             <div class="tag-row">
               <span class="tag-pin">Controls</span>
               <span class="tag-pin">EKFs</span>
@@ -157,13 +154,16 @@
               </div>
             </details>
           </div>
+          <div class="project-video">
+            <iframe src="https://www.youtube.com/embed/Jgsbadeq-jM" title="Planning &amp; Control for Autonomous Vehicles &mdash; Demo Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </article>
 
         <!-- PROJECT 2: A* vs Hybrid A* CARLA Demo -->
         <article class="project" id="project-astar">
           <div class="project-plate">
             <div>
-              <div class="project-plate-id">SYS&#8209;02 &middot; PLANNING &amp; CONTROL STUDY</div>
+              <div class="project-plate-id">PLANNING &amp; CONTROL STUDY</div>
               <h3>A* vs. Hybrid A* &mdash; CARLA Demo</h3>
               <p class="project-blurb">Simulator demo comparing Hybrid A* and A* for autonomous vehicle applications.</p>
             </div>
@@ -173,9 +173,6 @@
             </div>
           </div>
           <div class="project-body">
-            <div class="project-video">
-              <iframe src="https://www.youtube.com/embed/nBQTj5k9iuQ" title="A* vs. Hybrid A* &mdash; CARLA Demo Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
             <div class="tag-row">
               <span class="tag-pin">CARLA Simulator</span>
               <span class="tag-pin">Python</span>
@@ -187,20 +184,9 @@
               <div class="project-block-label">Approach</div>
               <p>Compared A* and Hybrid A* path planning for autonomous parking in CARLA (Town05). Both planners were sourced from an open-source motion planning library (zhm&#8209;real) &mdash; my contribution was the system integration: building the CARLA obstacle pipeline from vehicle bounding boxes, a custom path follower with crash detection (CARLA's built-in manager doesn't support custom path tracking), Stanley controller tuning to match the Audi e-tron model, and the trial evaluation framework. This closed-loop setup &mdash; planning &#8594; tracking &#8594; crash detection &mdash; is what caught A*'s Trial 1 collision, directly demonstrating the kinematic-feasibility gap the project set out to test.</p>
             </div>
-
-            <div class="project-block">
-              <div class="project-block-label">Code Summary</div>
-              <p>Hybrid A* discretizes heading into 15&deg; bins and samples 39 steering angles per expansion, propagating a bicycle kinematic model and using Reeds&#8209;Shepp shortcuts to terminate search early once a direct connection to the goal is feasible.</p>
-            </div>
-
-            <div class="project-block">
-              <div class="project-block-label">Sim Experience</div>
-              <p>Five trials with varying obstacle layouts in a 57&times;34m parking lot, isolating the planner as the only variable between runs to attribute outcome differences directly to the algorithm.</p>
-            </div>
-
-            <div class="project-block">
-              <p class="contribution-line">Co-developed with Vanessa Guzman &mdash; my contributions: simulation setup, obstacle pipeline, CARLA integration, path follower, controller tuning.</p>
-            </div>
+          </div>
+          <div class="project-video">
+            <iframe src="https://www.youtube.com/embed/nBQTj5k9iuQ" title="A* vs. Hybrid A* &mdash; CARLA Demo Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </article>
 
@@ -208,7 +194,7 @@
         <article class="project" id="project-manipulation">
           <div class="project-plate">
             <div>
-              <div class="project-plate-id">SYS&#8209;03 &middot; ROBOTIC MANIPULATION</div>
+              <div class="project-plate-id">ROBOTIC MANIPULATION</div>
               <h3>Vision-Based Robotic Manipulation</h3>
               <p class="project-blurb">Implemented a vision-guided robotic manipulator pick-and-place sorting system.</p>
             </div>
@@ -217,9 +203,6 @@
             </div>
           </div>
           <div class="project-body">
-            <div class="project-video">
-              <iframe src="https://www.youtube.com/embed/zEReax7Bfgg" title="Vision-Based Robotic Manipulation &mdash; Demo Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
             <div class="tag-row">
               <span class="tag-pin">CV</span>
               <span class="tag-pin">Planning</span>
@@ -252,6 +235,9 @@
             <div class="project-block">
               <p class="contribution-line">Collaborative lab with Anthony Man &mdash; shared design and implementation across CV, kinematics, and control.</p>
             </div>
+          </div>
+          <div class="project-video">
+            <iframe src="https://www.youtube.com/embed/zEReax7Bfgg" title="Vision-Based Robotic Manipulation &mdash; Demo Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </article>
 
