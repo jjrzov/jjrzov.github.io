@@ -588,13 +588,15 @@ a { color: inherit; }
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 14px;
   margin-top: 28px;
 }
 
 .contact-card {
+  flex: 0 1 auto;
+  min-width: 180px;
   border: 1px solid var(--line);
   background: var(--bg-panel);
   border-radius: 6px;
@@ -618,6 +620,7 @@ a { color: inherit; }
 .contact-card .value {
   font-family: var(--font-mono);
   font-size: 13.5px;
+  white-space: nowrap;
 }
 
 /* ============================================
