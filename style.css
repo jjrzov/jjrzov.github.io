@@ -471,12 +471,6 @@ a { color: inherit; }
 
 .project-links a:hover { text-decoration: underline; }
 
-.project-links a.disabled {
-  color: var(--ink-faint);
-  cursor: default;
-  pointer-events: none;
-}
-
 .project-body {
   padding: 24px 26px 28px;
 }
