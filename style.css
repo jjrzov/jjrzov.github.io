@@ -607,17 +607,11 @@ a { color: inherit; }
 }
 
 .film-card {
-  text-decoration: none;
   color: var(--ink);
   border: 1px solid var(--line);
   background: var(--bg-panel);
   border-radius: 6px;
   padding: 12px 16px;
-  transition: border-color 0.15s ease;
-}
-
-.film-card:hover {
-  border-color: var(--accent);
 }
 
 .film-title {
