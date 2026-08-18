@@ -590,7 +590,21 @@ a { color: inherit; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
-  margin: 32px 0 14px;
+  margin: 32px 0 8px;
+}
+
+.films-note {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  margin: 0 0 14px;
+}
+
+.films-note a {
+  color: var(--signal);
+}
+
+.films-note a:hover {
+  text-decoration: underline;
 }
 
 .films-grid {
