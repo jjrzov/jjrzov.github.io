@@ -625,13 +625,6 @@ a { color: inherit; }
   font-weight: 600;
 }
 
-.film-year {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--ink-faint);
-  margin-top: 3px;
-}
-
 .contact-grid {
   display: flex;
   flex-wrap: wrap;
