@@ -590,6 +590,48 @@ a { color: inherit; }
   font-size: 1rem;
 }
 
+.films-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 32px 0 14px;
+}
+
+.films-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 620px;
+}
+
+.film-card {
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: var(--bg-panel);
+  border-radius: 6px;
+  padding: 12px 16px;
+  transition: border-color 0.15s ease;
+}
+
+.film-card:hover {
+  border-color: var(--accent);
+}
+
+.film-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.film-year {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-faint);
+  margin-top: 3px;
+}
+
 .contact-grid {
   display: flex;
   flex-wrap: wrap;
