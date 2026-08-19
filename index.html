@@ -269,6 +269,46 @@
           </div>
         </article>
 
+        <!-- PROJECT 5: Teleoperated Robotic Hand -->
+        <article class="project" id="project-robotic-hand">
+          <div class="project-plate">
+            <div>
+              <div class="project-plate-id">MECHANICAL CONTROL SYSTEM DESIGN</div>
+              <h3>Teleoperated Robotic Hand</h3>
+              <p class="project-blurb">Teleoperated robotic hand with custom PCBs using RTOS.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jjrzov/RoboticHand" target="_blank" rel="noopener">&#8599; GitHub</a>
+              <a href="https://docs.google.com/document/d/1KLlc7KL5bnz9HW-TLdiJD9lEQh77Oh5J_ZgvjNATmjc/edit?tab=t.0" target="_blank" rel="noopener">&#8599; Report</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="tag-row">
+              <span class="tag-pin">PCB Design</span>
+              <span class="tag-pin">ESP32</span>
+              <span class="tag-pin">RTOS</span>
+              <span class="tag-pin">KiCad</span>
+              <span class="tag-pin">Control Systems</span>
+              <span class="tag-pin">Embedded</span>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Approach &mdash; System Overview</div>
+              <p>Designed a teleoperated robotic hand that mirrors human finger movement in real time with a glove integrated with flex sensors that captures the operator's hand pose, and small servo motors drive the corresponding fingers on the robotic hand. The project spanned the full research, design, and prototyping/testing cycle for a mechanical control system.</p>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">PCB Development</div>
+              <p>Designed a custom PCB adapting off-the-shelf motor driver circuitry into a board built around an ESP32 microcontroller, laying out the traces and wiring to integrate driver ICs, power distribution, and microcontroller I/O.</p>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">System Design &mdash; Communication &amp; Control Loop</div>
+              <p>Both the glove and the robotic hand run their own ESP32, communicating wirelessly over ESP-NOW. Each ESP32 is programmed with FreeRTOS to guarantee deterministic timing across three concurrent tasks: reading encoder feedback, running per-finger PID control loops, and receiving pose data from the glove &mdash; deterministic scheduling was essential to keep sensor reads, control updates, and wireless comms from drifting out of sync.</p>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
