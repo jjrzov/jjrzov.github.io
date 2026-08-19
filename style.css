@@ -534,15 +534,6 @@ a { color: inherit; }
   background: var(--bg-panel-alt);
 }
 
-.project-photos figcaption {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  border-top: 1px solid var(--line-soft);
-  padding: 6px 10px;
-}
 
 .tag-row {
   display: flex;
