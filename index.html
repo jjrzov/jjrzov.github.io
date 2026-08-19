@@ -168,7 +168,7 @@
 
             <div class="project-block">
               <div class="project-block-label">Approach</div>
-              <p>Compared A* and Hybrid A* path planning for autonomous parking in CARLA (Town05). Both planners were sourced from an open-source motion planning library (zhm&#8209;real) &mdash; my contribution was the system integration: building the CARLA obstacle pipeline from vehicle bounding boxes, a custom path follower with crash detection (CARLA's built-in manager doesn't support custom path tracking), Stanley controller tuning to match the Audi e-tron model, and the trial evaluation framework. This closed-loop setup &mdash; planning &#8594; tracking &#8594; crash detection &mdash; is what caught A*'s Trial 1 collision, directly demonstrating the kinematic-feasibility gap the project set out to test.</p>
+              <p>This project is a demonstration between A* and Hybrid A* path planning for autonomous parking in CARLA. Both planners were sourced from an open source motion planning library, with the main project contribution being the integration of the planners onto a testing framework within CARLA. This includes building a CARLA obstacle pipeline from vehicle bounding boxes and a custom path follower as CARLA does not support custom path tracking. A Stanley controller with a PID longitudinal control was tuned to match the built-in CARLA Audi e-tron model. Thus offering a closed loop setup from planning to tracking to demonstrate the kinematic feasibility gap between the planners.</p>
             </div>
           </div>
         </article>
@@ -249,12 +249,12 @@
 
             <div class="project-block">
               <div class="project-block-label">Program Context</div>
-              <p>NGCP is a year-round autonomous aerial vehicle program sponsored by Northrop Grumman, run on an annual cycle &mdash; research, design, and build culminate in a formal Preliminary Design Review with Northrop Grumman engineers, then a live autonomous flight demo in front of sponsors. Over 3 years I progressed from embedded team member to Avionics Lead.</p>
+              <p>The Northrop Grumman Collaboration Project (NGCP) is a year-round autonomous aerial vehicle program sponsored by Northrop Grumman where Cal Poly SLO collaborates with Cal Poly Pomona to complete varying flight missions. The project runs on a 1 year cycle of research, design, and build that ends in a live autonomous flight demo in front of officials. Over 3 years I progressed from embedded team member to Avionics Lead.</p>
             </div>
 
             <div class="project-block">
               <div class="project-block-label">Approach</div>
-              <p>Owned the full avionics stack across multiple airframes &mdash; hexcopter and quadcopter drones, fixed-wing aircraft, and both standard and tilt-rotor VTOLs. Work spanned hardware selection via trade studies and FMEAs, electrical and power system analysis, flight software configuration (PX4, ArduPilot, QGroundControl), and hands-on electronics integration and troubleshooting &mdash; plus leading the avionics team through each year's design-to-demo cycle.</p>
+              <p>Owned the full avionics stack across multiple airframes (hexcopter and quadcopter drones, fixed-wing aircraft, and both standard and tilt-rotor VTOLs). My work spanned hardware selection via trade studies and FMEAs, electrical and power system analysis, flight software configuration (PX4, ArduPilot, QGroundControl), and hands-on electronics integration and troubleshooting, plus leading the avionics team through each year's design-to-demo cycle.</p>
             </div>
 
             <div class="project-block">
@@ -264,7 +264,58 @@
 
             <div class="project-block">
               <div class="project-block-label">Results</div>
-              <p>In the final year, led avionics through a successful demo day launch of two autonomous aircraft &mdash; a standard VTOL and a tilt-rotor VTOL &mdash; both completing their assigned flight missions fully autonomously.</p>
+              <p>In the final year, led avionics through a successful demo day launch of two autonomous aircraft, a standard VTOL and a tilt-rotor VTOL, with both completing their assigned flight missions fully autonomously.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 5: Teleoperated Robotic Hand -->
+        <article class="project" id="project-robotic-hand">
+          <div class="project-plate">
+            <div>
+              <div class="project-plate-id">MECHANICAL CONTROL SYSTEM DESIGN</div>
+              <h3>Teleoperated Robotic Hand</h3>
+              <p class="project-blurb">Teleoperated robotic hand with custom PCBs using RTOS.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jjrzov/RoboticHand" target="_blank" rel="noopener">&#8599; GitHub</a>
+              <a href="https://jjrzov.com/RoboticHand/" target="_blank" rel="noopener">&#8599; Docs</a>
+              <a href="https://docs.google.com/document/d/1KLlc7KL5bnz9HW-TLdiJD9lEQh77Oh5J_ZgvjNATmjc/edit?tab=t.0" target="_blank" rel="noopener">&#8599; Report</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-photos">
+              <figure>
+                <img src="assets/Screenshot 2026-08-18 231501.png" alt="3D-printed robotic hand with servos installed" loading="lazy">
+                <figcaption>Hand</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/Screenshot 2026-08-18 231551.png" alt="Custom PCB layout in KiCad" loading="lazy">
+                <figcaption>PCB</figcaption>
+              </figure>
+            </div>
+            <div class="tag-row">
+              <span class="tag-pin">PCB Design</span>
+              <span class="tag-pin">ESP32</span>
+              <span class="tag-pin">RTOS</span>
+              <span class="tag-pin">KiCad</span>
+              <span class="tag-pin">Control Systems</span>
+              <span class="tag-pin">Embedded</span>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">Approach &mdash; System Overview</div>
+              <p>Designed a teleoperated robotic hand that mirrors human finger movement in real time with a glove integrated with flex sensors that captures the operator's hand pose, and small servo motors drive the corresponding fingers on the robotic hand. The project spanned the full research, design, and prototyping/testing cycle for a mechanical control system.</p>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">PCB Development</div>
+              <p>Designed a custom PCB adapting off-the-shelf motor driver circuitry into a board built around an ESP32 microcontroller, laying out the traces and wiring to integrate driver ICs, power distribution, and microcontroller I/O.</p>
+            </div>
+
+            <div class="project-block">
+              <div class="project-block-label">System Design &mdash; Communication &amp; Control Loop</div>
+              <p>Both the glove and the robotic hand run their own ESP32, communicating wirelessly over ESP-NOW. Each ESP32 is programmed with FreeRTOS to guarantee deterministic timing across three concurrent tasks: reading encoder feedback, running per-finger PID control loops, and receiving pose data from the glove &mdash; deterministic scheduling was essential to keep sensor reads, control updates, and wireless comms from drifting out of sync.</p>
             </div>
           </div>
         </article>
